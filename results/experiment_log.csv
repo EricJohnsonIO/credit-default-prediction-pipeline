@@ -1,0 +1,15 @@
+Model,FeatureEngineering,DropFeatures,FeatureSelector,tuned,Roc_Auc,Avg Precision,F1,Recall,Precision
+RandomForest,False,True,,False,0.7741353088308479,0.5411623222194477,0.5438889103242814,0.606894323835489,0.4927694070270429
+RandomForest,True,True,"SelectFromModel(estimator=RandomForestClassifier(max_depth=10,
+                                                 random_state=314),
+                threshold='median')",False,0.7805430944426099,0.5541611021569515,0.5373431294952705,0.6372213968629247,0.46455974864383853
+Logistic Regression,False,True,,False,0.7244062652792808,0.49750784849785745,0.4760743294092582,0.6528577843806521,0.37473049747342496
+Logistic Regression,True,True,"SelectFromModel(estimator=LogisticRegression(class_weight='balanced',
+                                             max_iter=10000, random_state=314),
+                threshold='median')",False,0.7493320523720867,0.4777282918073701,0.517445181836915,0.6436265400050762,0.43270642840555357
+HistGradientBoosting,True,True,,False,0.7820567419642158,0.5550750827576622,0.5392413646601746,0.6304394283898749,0.4711217588519969
+RandomForest,True,False,"SelectFromModel(estimator=RandomForestClassifier(max_depth=10,
+                                                 random_state=314),
+                threshold='median')",False,0.780896606323848,0.5525299055062171,0.5366365716424168,0.6343947631396312,0.4650031615948385
+HistGradientBoosting,True,False,,False,0.7841987877405925,0.5536740484286826,0.5396206016221411,0.6289319495696594,0.4725366413707864
+HistGradientBoosting,True,False,,True,0.7857660671431912,0.5499766315805121,0.5394828776492775,0.6443775282175257,0.4640246322346301

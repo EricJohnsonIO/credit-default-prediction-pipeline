@@ -1,0 +1,70 @@
+ RandomForest (Baseline)
+
+Roc_Auc:      0.7741 ± 0.0039 | train:        0.7848
+Avg Precision:0.5412 ± 0.0153 | F1:           0.5439 ± 0.0070 | Recall:       0.6069 ± 0.0088
+Precision:    0.4928 ± 0.0070
+
+ RandomForest (Baseline) - FE (Dropped Source Features) + FS
+
+Roc_Auc:      0.7805 ± 0.0057 | train:        0.7921
+Avg Precision:0.5542 ± 0.0167 | F1:           0.5373 ± 0.0075 | Recall:       0.6372 ± 0.0116
+Precision:    0.4646 ± 0.0056
+
+ Logistic Regression (Baseline)
+
+Roc_Auc:      0.7244 ± 0.0082 | train:        0.7266
+Avg Precision:0.4975 ± 0.0155 | F1:           0.4761 ± 0.0069 | Recall:       0.6529 ± 0.0178
+Precision:    0.3747 ± 0.0048
+
+ Logistic Regression (Baseline) - FE (Dropped Source Features) + FS
+
+Roc_Auc:      0.7493 ± 0.0052 | train:        0.7513
+Avg Precision:0.4777 ± 0.0156 | F1:           0.5174 ± 0.0088 | Recall:       0.6436 ± 0.0118
+Precision:    0.4327 ± 0.0090
+
+ HistGradientBoosting (Baseline) - FE (Dropped Source Features)
+
+Roc_Auc:      0.7811 ± 0.0075 | train:        0.8254
+Avg Precision:0.5574 ± 0.0133 | F1:           0.5372 ± 0.0111 | Recall:       0.6327 ± 0.0116
+Precision:    0.4669 ± 0.0117
+
+ RandomForest (Baseline) - FE (Keep Source Features) + FS
+
+Roc_Auc:      0.7809 ± 0.0049 | train:        0.7942
+Avg Precision:0.5525 ± 0.0176 | F1:           0.5366 ± 0.0065 | Recall:       0.6344 ± 0.0094
+Precision:    0.4650 ± 0.0054
+
+
+ HistGradientBoosting (Baseline) - FE (Keep Source Features)
+
+Roc_Auc:      0.7841 ± 0.0063 | train:        0.8323
+Avg Precision:0.5569 ± 0.0148 | F1:           0.5371 ± 0.0070 | Recall:       0.6303 ± 0.0129
+Precision:    0.4681 ± 0.0055
+
+ HistGradientBoosting - FE (Keep Source Features)
+
+Roc_Auc:      0.7857 ± 0.0072 | train:        0.8206
+Avg Precision:0.5531 ± 0.0137 | F1:           0.5365 ± 0.0077 | Recall:       0.6429 ± 0.0106
+Precision:    0.4604 ± 0.0074
+
+Best Threshold:  0.2877729048920662
+Best Score:  0.5465156161489235
+
+Results with 0.5 threshold
+
+Train roc_auc-AUC: 0.8212072386722074
+Test roc-auc: 0.7879521134333086
+(6000,)
+                      precision    recall  f1-score  support
+wont default payment   0.845629  0.954205  0.896642   4673.0
+will default payment   0.705640  0.386586  0.499513   1327.0
+
+
+Results with 0.2877729048920662 threshold
+ 0.2877729048920662
+Train roc_auc-AUC: 0.8212072386722074
+Test roc-auc: 0.7879521134333086
+(6000,)
+                      precision    recall  f1-score  support
+wont default payment   0.875520  0.856409  0.865859   4673.0
+will default payment   0.530441  0.571213  0.550073   1327.0
