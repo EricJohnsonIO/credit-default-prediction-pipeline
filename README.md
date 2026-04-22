@@ -38,8 +38,10 @@ python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-#### Windows Powershell
+#### Windows Powershell 
+Assumes you have python
 ```bash
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 python -m venv venv
 venv\Scripts\Activate.ps1
 pip install -r requirements.txt
