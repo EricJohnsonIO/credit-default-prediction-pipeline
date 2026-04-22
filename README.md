@@ -39,7 +39,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 #### Windows Powershell 
-Assumes you have python
+
 ```bash
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 python -m venv venv
